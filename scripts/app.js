@@ -17,13 +17,4 @@ $("#buyApple").on("click", function(apple){
 });//end jquery
 
 
-//start calc function
-// $("#quantityApple").change(function(){
-// });
-
-
-
-// $('#quantity').on('keyup',function(){
-//     var tot = $('#price').val() * this.value;
-//     $('#total').val(tot);
-// });
+// Need to display to outputBasket can hard code fruits, but need to output quantity  
