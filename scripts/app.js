@@ -5,8 +5,8 @@ console.log("jquery is here");
 //start buy Apple button
 $("#buyApple").on("click", function apple(){
     console.log("The buy apple button was clicked.");
-  var quantity = $("#quantityApple").val();
-  console.log("This is quantity:", quantity);
+  // var quantity = $("#quantityApple").val();
+  // console.log("This is quantity:", quantity);
   var price = $("#applePrice").html();
   console.log("This is the Apple Price:", price);
   var calcPrice = quantity * price;
@@ -69,16 +69,16 @@ $("#buyGrape").on("click", function grape(){
   // var calcTotal= apple() + orange() + banana() + grape();
   // console.log(calcTotal);
 
-$("#checkout").on("click", function(){
-    console.log("The checkout button was clicked");
-  var apple=  apple();
-  var orange= orange();
-  var banana= banana();
-  var grape= grape();
-  var calcTotal= apple + orange + banana + grape;
-  console.log("Total Price: ",calcTotal);
-  $("#totalPriceAll").text(calcTotal);
-});
+// $("#checkout").on("click", function(){
+//     console.log("The checkout button was clicked");
+//   var apple=  apple();
+//   var orange= orange();
+//   var banana= banana();
+//   var grape= grape();
+//   var calcTotal= apple + orange + banana + grape;
+//   console.log("Total Price: ",calcTotal);
+//   $("#totalPriceAll").text(calcTotal);
+// });
 
 });//end jquery
 
