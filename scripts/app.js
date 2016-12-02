@@ -2,72 +2,56 @@ console.log("app sourced");
 $(document).ready(function(){
 console.log("jquery is here");
 
-
-// //start buy Apple button
 var quantity=0;
+// //start buy Apple button
 $("#buyApple").click(function() {
     quantity++;
   console.log("This is quantity/number of clicks:", quantity);  //(need to make quantity = to number of clicks)
   var price = $("#applePrice").html();
   console.log("This is the Apple Price:", price);
-  var calcPrice = quantity * price;
-  console.log("Sub-Total Price: ",calcPrice);
-  $("#totalPriceApple").text(calcPrice);
-  $("#totalPriceApple").html("My current count is: "+quantity);
+  // var calcPrice = quantity * price;
+  // console.log("Sub-Total Price: ",calcPrice);
+  // $("#totalPriceApple").text(calcPrice);
+  $("#totalPriceApple").html(quantity);
 //end calc function
 });//end buy Apple button
 
-
-// // //start buy Apple button
-// $("#buyApple").on("click", function (){
-//   console.log("The buy apple button was clicked.");
-//   var quantity=0;
-//   quantity=quantity+1;
-//   console.log("This is quantity/number of clicks:", quantity);  //(need to make quantity = to number of clicks)
-//   var price = $("#applePrice").html();
-//   console.log("This is the Apple Price:", price);
-//   var calcPrice = quantity * price;
-//   console.log("Total Price: ",calcPrice);
-//   $("#totalPriceApple").text(calcPrice);
-// //end calc function
-// });//end buy Apple button
-
 //start buy Orange button
-$("#buyOrange").on("click", function (){
-    console.log("The buy orange button was clicked.");
-  var quantity = 1; //(need to make quantity = to number of clicks)
-  console.log("This is quantity:", quantity);
+$("#buyOrange").click(function() {
+    quantity++;
+  console.log("This is quantity/number of clicks:", quantity);  //(need to make quantity = to number of clicks)
   var price = $("#orangePrice").html();
   console.log("This is the Orange Price:", price);
-  var calcPrice = quantity * price;
-  console.log("Total Price: ",calcPrice);
-  $("#totalPriceOrange").text(calcPrice);
+  // var calcPrice = quantity * price;
+  // console.log("Sub-Total Price: ",calcPrice);
+  // $("#totalPriceOrange").text(calcPrice);
+  $("#totalPriceOrange").html(quantity);
 //end calc function
 });//end buy Orange button
 
 //start buy Banana button
-$("#buyBanana").on("click", function (){
-    console.log("The buy bananas button was clicked.");
-  var quantity = 1; //(need to make quantity = to number of clicks)
-  console.log("This is quantity:", quantity);
+$("#buyBanana").click(function() {
+    quantity++;
+  console.log(quantity);  //(need to make quantity = to number of clicks)
   var price = $("#bananaPrice").html();
   console.log("This is the Banana Price:", price);
-  var calcPrice = quantity * price;
-  console.log("Total Price: ",calcPrice);
-  $("#totalPriceBanana").text(calcPrice);
+  // var calcPrice = quantity * price;
+  // console.log("Sub-Total Price: ",calcPrice);
+  // $("#totalPriceBanana").text(calcPrice);
+  $("#totalPriceBanana").html(quantity);
 //end calc function
 });//end buy Banana button
 
 //start buy Grape button
-$("#buyGrape").on("click", function (){
-    console.log("The buy grape button was clicked.");
-  var quantity = 1; //(need to make quantity = to number of clicks)
-  console.log("This is quantity:", quantity);
+$("#buyGrape").click(function() {
+    quantity++;
+  console.log("This is quantity/number of clicks:", quantity);  //(need to make quantity = to number of clicks)
   var price = $("#grapePrice").html();
-  console.log("This is the Grape Price:", price);
-  var calcPrice = quantity * price;
-  console.log("Total Price: ",calcPrice);
-  $("#totalPriceGrape").text(calcPrice);
+  console.log("This is the Apple Price:", price);
+  // var calcPrice = quantity * price;
+  // console.log("Sub-Total Price: ",calcPrice);
+  // $("#totalPriceGrape").text(calcPrice);
+  $("#totalPriceGrape").html("My current count is: "+quantity);
 //end calc function
 });//end buy Grape button
 
@@ -85,18 +69,4 @@ $("#buyGrape").on("click", function (){
   // var calcTotal= apple() + orange() + banana() + grape();
   // console.log(calcTotal);
 
-// $("#checkout").on("click", function(){
-//     console.log("The checkout button was clicked");
-//   var apple=  apple();
-//   var orange= orange();
-//   var banana= banana();
-//   var grape= grape();
-//   var calcTotal= apple + orange + banana + grape;
-//   console.log("Total Price: ",calcTotal);
-//   $("#totalPriceAll").text(calcTotal);
-// });
-
 });//end jquery
-
-
-// Need to display to outputBasket can hard code fruits, but need to output quantity
