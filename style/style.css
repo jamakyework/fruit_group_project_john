@@ -1,7 +1,6 @@
-body{
-  /*background-image: url("https://inktart.files.wordpress.com/2012/10/40-dirty-paper-background-lrg.jpg");*/
-  /*background-size: cover;*/
-}
+/*body{
+  background-color: maroon;
+}*/
 
 .title{
   font-weight: bold;
@@ -11,8 +10,8 @@ body{
   text-align: center;
   border: solid black 5px;
 }
-button{
+/*button{
   display:block;
   width: auto;
   margin: 0px auto;
-}
+}*/

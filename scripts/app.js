@@ -2,24 +2,40 @@ console.log("app sourced");
 $(document).ready(function(){
 console.log("jquery is here");
 
-//start buy Apple button
-$("#buyApple").on("click", function apple(){
-    console.log("The buy apple button was clicked.");
-  // var quantity = $("#quantityApple").val();
-  // console.log("This is quantity:", quantity);
+
+// //start buy Apple button
+var quantity=0;
+$("#buyApple").click(function() {
+    quantity++;
+  console.log("This is quantity/number of clicks:", quantity);  //(need to make quantity = to number of clicks)
   var price = $("#applePrice").html();
   console.log("This is the Apple Price:", price);
   var calcPrice = quantity * price;
-  console.log("Total Price: ",calcPrice);
+  console.log("Sub-Total Price: ",calcPrice);
   $("#totalPriceApple").text(calcPrice);
+  $("#totalPriceApple").html("My current count is: "+quantity);
 //end calc function
 });//end buy Apple button
 
-console.log("Apple function:", apple());
+
+// // //start buy Apple button
+// $("#buyApple").on("click", function (){
+//   console.log("The buy apple button was clicked.");
+//   var quantity=0;
+//   quantity=quantity+1;
+//   console.log("This is quantity/number of clicks:", quantity);  //(need to make quantity = to number of clicks)
+//   var price = $("#applePrice").html();
+//   console.log("This is the Apple Price:", price);
+//   var calcPrice = quantity * price;
+//   console.log("Total Price: ",calcPrice);
+//   $("#totalPriceApple").text(calcPrice);
+// //end calc function
+// });//end buy Apple button
+
 //start buy Orange button
-$("#buyOrange").on("click", function orange(){
+$("#buyOrange").on("click", function (){
     console.log("The buy orange button was clicked.");
-  var quantity = $("#quantityOrange").val();
+  var quantity = 1; //(need to make quantity = to number of clicks)
   console.log("This is quantity:", quantity);
   var price = $("#orangePrice").html();
   console.log("This is the Orange Price:", price);
@@ -30,9 +46,9 @@ $("#buyOrange").on("click", function orange(){
 });//end buy Orange button
 
 //start buy Banana button
-$("#buyBanana").on("click", function banana(){
+$("#buyBanana").on("click", function (){
     console.log("The buy bananas button was clicked.");
-  var quantity = $("#quantityBanana").val();
+  var quantity = 1; //(need to make quantity = to number of clicks)
   console.log("This is quantity:", quantity);
   var price = $("#bananaPrice").html();
   console.log("This is the Banana Price:", price);
@@ -43,9 +59,9 @@ $("#buyBanana").on("click", function banana(){
 });//end buy Banana button
 
 //start buy Grape button
-$("#buyGrape").on("click", function grape(){
+$("#buyGrape").on("click", function (){
     console.log("The buy grape button was clicked.");
-  var quantity = $("#quantityGrape").val();
+  var quantity = 1; //(need to make quantity = to number of clicks)
   console.log("This is quantity:", quantity);
   var price = $("#grapePrice").html();
   console.log("This is the Grape Price:", price);

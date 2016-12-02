@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="vendors/jquery-3.0.0.min.js"></script>
     <link rel="stylesheet" href="style/style.css" >
+    <script src="vendors/jquery-3.0.0.min.js"></script>
     <script src="scripts/app.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>Fruit Stand</title>
   </head>
@@ -17,8 +17,10 @@
     <h1>THE FRUITSHACK</h1>
     <p class="col-md-2 col-md-offset-10"> User cash:</p>
 
+                <!-- Start Table -->
     <table class="table table-bordered table-striped table-responsive">
-    	<thead>
+                <!-- Table Headings -->
+      <thead>
     		<tr>
     			<th>
     				Fruit
@@ -26,108 +28,86 @@
     			<th>
     				Price
     			</th>
-    			<!-- <th>
-    				Quantity
-    			</th>
     			<th>
-    				Buy
-    			</th> -->
-    			<th>
-    				Sub-Total Cost
+    				Sub-Total
     			</th>
     		</tr>
     	</thead>
-    	<tbody>
-    		<tr>
-    			<td>
+                    <!-- End Table Headings -->
+                    <!-- Start Table Body -->
+      <tbody>
+            <!-- Start Apples -->
+        <tr>
+    			<td class="col-sm-1">
     				Apples
-            <button type="button"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" id="buyApple"/></buton>
+            <button type="button" id="buyApple"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" /></buton>
     			</td>
     			<td>
     				<div id="applePrice" class="price">1.00</div>
     			</td>
     			<td>
-    				<input type="number" id="quantityApple" name="" value="">
-    			</td>
-    			<td class="col-sm-1">
-            <!-- <button type="button"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" id="buyApple"/></buton> -->
-    				<!-- <button type="button" id= >Buy!</button> -->
-    			</td>
-    			<td>
     				<div id="totalPriceApple" div class="subTotal"></div>
     			</td>
     		</tr>
+              <!-- End Apples -->
+              <!-- Start Oranges -->
     		<tr>
-    			<td>
+    			<td td class="col-sm-1">
     				Oranges
-            <button type="button"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" id="buyApple"/></buton>
+            <button type="button" id="buyOrange"/></> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" buton>
     			</td>
     			<td>
     				<div id="orangePrice" class="price">1.00</div>
-    			</td>
-    			<!-- <td>
-    				<input type="number" id="quantityOrange" name="" value="">
-    			</td> -->
-    			<td class="col-sm-1">
-    				<!-- <button type="button" id="buyOrange" name="button">Buy!</button> -->
     			</td>
     			<td>
     				<div id="totalPriceOrange" div class="subTotal"></div>
     			</td>
     		</tr>
+              <!-- End Oranges -->
+              <!-- Start Bananas -->
     		<tr>
-    			<td>
+    			<td class="col-sm-1">
     				Bananas
-            <button type="button"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" id="buyApple"/></buton>
+            <button type="button" id="buyBananas"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" /></buton>
     			</td>
     			<td>
     				<div id="bananaPrice" class="price">1.00</div>
-    			</td>
-    			<!-- <td>
-    				<input type="number" id="quantityBanana" name="" value="">
-    			</td> -->
-    			<td class="col-sm-1">
-    				<!-- <button type="button" id="buyBanana" name="button">Buy!</button> -->
     			</td>
     			<td>
     				<div id="totalPriceBanana" div class="subTotal"></div>
     			</td>
     		</tr>
+                  <!-- End Bananas -->
+                  <!-- Start Grapes -->
     		<tr>
-    			<td>
+    			<td class="col-sm-1">
     				Grapes
-            <button type="button"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg" id="buyApple"/></buton>
+            <button type="button" id="buyGrapes"> <input type="image" src="http://www.bigbasket.com/media/uploads/p/l/40033815_3-fresho-apple-fuji.jpg"/></buton>
     			</td>
     			<td>
     				<div id="grapePrice" class="price">1.00</div>
-    			</td>
-    			<!-- <td>
-    				<input type="number" id="quantityGrape" name="" value="">
-    			</td> -->
-    			<td class="col-sm-1">
-    				<!-- <button type="button" id="buyGrape" name="button">Buy!</button> -->
     			</td>
     			<td>
     				<div id="totalPriceGrape" div class="subTotal"></div>
     			</td>
     		</tr>
-          <!-- <tr>
-            <td>
-              </td>
-              <td>
-                </td>
-                <td>
-                  </td> -->
+                  <!-- End Grapes -->
+                  <!-- Start Total Price -->
           <td>
-            <div><b>Total Price:</b></div>
           </td>
           <td>
-            <div id="totalPriceAll"></div>
+            <div id="totalPriceAll"><b>Total Price:</b></div>
+          </td>
+          <td>
+            x
           </td>
           </tr>
+
+                    <!-- End Total Price -->
     	</tbody>
+                      <!-- End Table Body -->
     </table>
-    <button type="button" name="button" div id="checkout">Checkout</button>
+                    <!-- End Table -->
     <div id="inv" class="col-md-4 col-md-offset-4">
       <p> Your Basket: </p>
       <p id="outputBasket"> $$$$$ </p>
